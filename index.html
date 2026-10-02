@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نَوَاة — هدايا من روح الضيافة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <nav class="wrap nav__in" aria-label="التنقل الرئيسي">
+    <a href="#home" class="nav__brand">نَوَاة</a>
+    <button class="burger" id="burger" aria-label="القائمة" aria-expanded="false"><span></span><span></span></button>
+    <ul class="nav__links" id="links">
+      <li><a href="#home">الرئيسية</a></li>
+      <li><a href="#boxes">هدايانا</a></li>
+      <li><a href="#occasions">حسب المناسبة</a></li>
+      <li><a href="#story">قصتنا</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+    <a href="#occasions" class="btn btn--sm">اختار هديتك</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <p class="eyebrow">هدايا من روح الضيافة</p>
+      <h1 class="wordmark" aria-label="نَوَاة">نَوَاة</h1>
+      <p class="hero__head">مش عارف تاخد إيه معاك؟<br><em>خد لَمّة.</em></p>
+      <p class="lead">بوكسات هدايا مستوحاة من كرم الضيافة العربية، متجهّزة علشان كل زيارة، تهنئة، ولمّة يكون ليها طعم خاص.</p>
+      <div class="actions"><a href="#occasions" class="btn">اختار هديتك</a><a href="#boxes" class="btn btn--ghost">شوف البوكسات</a></div>
+    </div>
+    <div class="hero__art">
+      <img src="images/hero.png" alt="بوكس هدايا مفتوح فيه تمر محشو، معمول، مكسرات، شوكولاتة، قهوة عربية" class="hero__img">
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="occasions">
+  <div class="wrap">
+    <div class="sec__head"><h2>كل لَمّة ليها هديتها</h2><p>قول لنا المناسبة، وإحنا نرشح لك البوكس المناسب.</p></div>
+    <div class="occ">
+      <div class="occ__tabs" role="tablist" id="occTabs"></div>
+      <div class="occ__panel" id="occPanel" aria-live="polite">
+        <div class="ph ph--occ"><img src="images/occasion.jpg" alt="occassion"></div>
+        <div class="occ__body">
+          <p class="tag">البوكس المقترح</p>
+          <h3 id="occBox"></h3>
+          <p id="occDesc"></p>
+          <a href="#boxes" class="btn" id="occCta"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tint" id="boxes">
+  <div class="wrap">
+    <div class="sec__head"><h2>بوكساتنا</h2><p>اختيارات جاهزة، لكل واحدة منها حكاية.</p></div>
+    <div class="boxes">
+
+  <article class="box box--a" data-box="بوكس الزيارة">
+    <div class="ph" data-ph="بوكس الزيارة">
+      <img src="images/zeyara.jfif" alt="بوكس الزيارة من نواة">
+    </div>
+    <h3>بوكس الزيارة</h3>
+    <p>تمر محشو، معمول، ومكسرات مختارة بعناية — هدية بسيطة بس بتقول كتير.</p>
+    <small>تمر محشو · معمول · مكسرات</small>
+    <a href="#personalize">شوف التفاصيل</a>
+  </article>
+
+      <article class="box box--b" data-box="بوكس القهوة"><div class="ph" data-ph="بوكس القهوة"><img src="images/coffee-box.jfif" alt="coffee"></div><h3>بوكس القهوة</h3><p>قهوة عربية محمصة وتمر، لجلسة هادية على فنجان.</p><small>قهوة عربية · تمر · هيل</small><a href="#personalize">شوف التفاصيل</a></article>
+      <article class="box box--c" data-box="بوكس الحلو"><div class="ph" data-ph="بوكس الحلو"><img src="images/dessert.jfif" alt="sweets"></div><h3>بوكس الحلو</h3><p>حلويات صنعة يدوية وشوكولاتة لأصحاب الحلو.</p><small>حلويات · شوكولاتة · فستق</small><a href="#personalize">شوف التفاصيل</a></article>
+      <article class="box box--d" data-box="بوكس اللَمّة"><div class="ph" data-ph="بوكس اللَمّة"><img src="images/lamma.jfif" alt="gift"></div><h3>بوكس اللَمّة</h3><p>الكبير اللي يكفي القعدة كلها، بكل اللي بنحبه في الضيافة.</p><small>تشكيلة كاملة تكفي ٨ أشخاص</small><a href="#personalize">شوف التفاصيل</a></article>
+      <article class="box box--e" data-box="البوكس الصغير"><div class="ph" data-ph="البوكس الصغير"><img src="images/small-box.jfif" alt="small gift"></div><h3>البوكس الصغير</h3><p>تفصيلة صغيرة تقول شكرًا.</p><small>تمرتين · معمول · شوكولاتة</small><a href="#personalize">شوف التفاصيل</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec story" id="story">
+  <div class="wrap story__grid">
+    <div class="story__art"><div class="motif motif--sm" aria-hidden="true"></div>
+    
+      <div class="ph ph--tall" data-ph="صورة القصة"><img src="images/story.jfif" alt="صورة القصة"></div></div>
+    <div>
+      <h2 class="big">مش مجرد بوكس.</h2>
+      <p class="quote">كل حكاية حلوة بتبدأ من تفصيلة صغيرة.<br>من نواة، تبدأ الحكاية.</p>
+      <p class="lead">إحنا بناخد تفاصيل بنحبها من ضيافتنا العربية، ونقدّمها بشكل جديد يخلي الهدية نفسها جزء من اللحظة.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--tint" id="personalize">
+  <div class="wrap">
+    <div class="sec__head"><h2>خلّيها هديتك إنت.</h2><p>اختار التفاصيل اللي تخلي البوكس معمول مخصوص للمناسبة.</p></div>
+    <div class="pers">
+      <form class="pers__form" onsubmit="return false">
+        <fieldset><legend>لون الشريط</legend>
+          <label class="chip"><input type="radio" name="rib" value="orange" checked><span><i style="background:var(--tang)"></i>برتقالي</span></label>
+          <label class="chip"><input type="radio" name="rib" value="green"><span><i style="background:var(--sage)"></i>أخضر</span></label>
+          <label class="chip"><input type="radio" name="rib" value="coral"><span><i style="background:var(--coral)"></i>مرجاني</span></label>
+        </fieldset>
+        <fieldset><legend>بطاقة إهداء</legend>
+          <label class="chip"><input type="radio" name="card" value="yes" checked><span>نعم</span></label>
+          <label class="chip"><input type="radio" name="card" value="no"><span>لا</span></label>
+        </fieldset>
+        <label class="msg">رسالة قصيرة
+          <textarea id="msg" maxlength="90" rows="3" placeholder="إلى أحمد، مبروك من القلب."></textarea></label>
+        <a href="#final" class="btn">كمّل الطلب</a>
+      </form>
+      <div class="preview" id="preview" data-rib="orange">
+        <div class="preview__box">
+          <span class="rib rib--v"></span><span class="rib rib--h"></span><span class="bow"></span>
+        </div>
+        <div class="gcard" id="gcard"><p id="gmsg">إلى أحمد،<br>مبروك من القلب.</p></div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="unbox">
+  <div class="wrap">
+    <div class="sec__head"><h2>من أول ما تتفتح العلبة</h2><p>التجربة جزء من الهدية، مش بس اللي جواها.</p></div>
+    <ol class="steps">
+      <li><span class="num">01</span><div class="ph"><img src="images/presented.jfif" alt="تقديم هدية نواة"></div><h3>تتقدّم</h3></li>
+      <li><span class="num">02</span><div class="ph"><img src="images/opened.jfif" alt="فتح هدية نواة"></div><h3>تتفتح</h3></li>
+      <li><span class="num">03</span><div class="ph"><img src="images/shared.jfif" alt="مشاركة هدية نواة"></div><h3>تتشارك</h3></li>
+    </ol>
+  </div>
+</section>
+
+<section class="life">
+  <div class="ph ph--wide">
+    <img src="images/lamma-wide.jpg" alt="لَمّة عربية مع قهوة وحلويات من نواة">
+  </div>
+  <h2>في كل بيت، في لَمّة تستاهل حاجة حلوة.</h2>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec__head"><h2>قالوا عن الهدية</h2></div>
+    <div class="tm">
+      <blockquote><p>البوكس شكله كان حلو جدًا، والأكل نفسه أحلى مما توقعت.</p><cite><b>م</b>عميل</cite></blockquote>
+      <blockquote><p>أول مرة ألاقي هدية شكلها عصري وفي نفس الوقت فيها روحنا.</p><cite><b>ن</b>عميل</cite></blockquote>
+      <blockquote><p>فكرة اختيار البوكس حسب المناسبة وفرت عليا حيرة كبيرة.</p><cite><b>ي</b>عميل</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="sec trust">
+  <div class="wrap trust__in">
+    <h2>هدية جاهزة للتقديم.</h2>
+    <ul><li>تغليف جاهز للتقديم</li><li>اختيار بطاقة إهداء</li><li>تجهيز بعناية</li><li>توصيل للعنوان</li></ul>
+  </div>
+</section>
+
+<section class="final" id="final">
+  <div class="wrap final__grid">
+    <div>
+      <h2>اختار هديتك،<br>وسيّب علينا الباقي.</h2>
+      <p class="lead">من أول اختيار البوكس لحد لحظة فتحه، كل تفصيلة معمولة علشان الهدية توصل زي ما تتمنى.</p>
+      <a href="#occasions" class="btn btn--light">اختار هديتك</a>
+    </div>
+    <div class="ph ph--final"><img src="images/f-cta.jfif" alt="final-CTA"></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="wrap foot__in">
+    <div><p class="foot__brand">نَوَاة</p><p>هدايا من روح الضيافة.</p></div>
+    <ul><li><a href="#home">الرئيسية</a></li><li><a href="#boxes">البوكسات</a></li><li><a href="#occasions">حسب المناسبة</a></li><li><a href="#story">قصتنا</a></li><li><a href="#contact">تواصل معنا</a></li></ul>
+    <ul><li><a href="#">Instagram @nawat.gifts</a></li><li><a href="#">WhatsApp 0100 000 0000</a></li><li><a href="#">hello@nawat.example</a></li></ul>
+  </div>
+  <p class="wrap copy">© 2026 نَوَاة — جميع الحقوق محفوظة</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
